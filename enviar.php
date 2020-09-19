@@ -36,7 +36,7 @@ if ($_POST['leaveblank'] != '' or $_POST['dontchange'] != 'http://') {
 	color: #1b1b1b;
 	\"><center><span>Aconteceu algum erro!</span><p>Você pode tentar denovo ou enviar direto para " . $email_envio . "!</p></center><h2>";
 	
-	echo "<html style=\"background: #fff;\"></html>";
+	echo "<html style=\"background: $bg-light;\"></html>";
 	echo "<meta HTTP-EQUIV='Refresh' CONTENT='10;URL=" . $site_url . "'>";
 }
 
@@ -79,7 +79,7 @@ if(!$mail->send()) {
 	color: #fdc64b;
 	\"><center><span>Aconteceu algum erro!</span><p>Você pode tentar denovo ou enviar direto para " . $email_envio . "!</p></center><h2>";
 	
-	echo "<html style=\"background: #fff;\"></html>";
+	echo "<html style=\"background: $bg-light;\"></html>";
 	echo "<meta HTTP-EQUIV='Refresh' CONTENT='10;URL=" . $site_url . "'>";
   
 } else {
@@ -94,7 +94,7 @@ if(!$mail->send()) {
 	color: #89bb50;
 	\"><center><span>Formulário Enviado</span><p>Em breve eu entro em contato com você. Abraços.</p></center><h2>";
 	
-	echo "<html style=\"background: #fff;\"></html>";
+	echo "<html style=\"background: $bg-light;\"></html>";
 	echo "<meta HTTP-EQUIV='Refresh' CONTENT='2;URL=" . $site_url . "'>";
 }
 }
