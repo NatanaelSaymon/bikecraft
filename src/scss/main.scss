@@ -11,6 +11,8 @@
 
 // Libs
 // =============================================================================
+@import "_normalize.scss";
+@import "_reset.scss";
 
 
 
@@ -19,9 +21,10 @@
 
 
 
-// Components (fontes do site)
+// Components
 // =============================================================================
-
+@import "_grid.scss";
+@import "_geral";
 
 
 // Includes
@@ -31,5 +34,8 @@
 
 // Pages
 // =============================================================================
-@import "_home/_home.scss";
-@import "_sobre/_sobre.scss";
+@import "_sobre.scss";
+@import "_produtos.scss";
+@import "_portfolio.scss";
+@import "_contato.scss";
+@import "_responsivo.scss";
