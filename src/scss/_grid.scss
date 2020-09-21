@@ -47,7 +47,7 @@ $colunas: 16; //total de colunas
 	clear: both;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@include device(tablet){
 	//VARIAVEIS
 	$container: 768;
 
@@ -67,7 +67,7 @@ $colunas: 16; //total de colunas
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@include device(mobile){
 
 	$container: 300;
 

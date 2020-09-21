@@ -43,3 +43,19 @@
         font-size: 48px;
     }
 }
+
+
+
+//REPONSIVO
+@mixin device($dispositivo){
+    @if $dispositivo == tablet{
+        @media only screen and (min-width: 768px) and (max-width: 959px){
+            @content;
+        }
+    }
+    @else if $dispositivo == mobile{
+        @media only screen and (max-width: 767px){
+            @content;
+        }
+    }
+}
