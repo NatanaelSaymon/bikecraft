@@ -6,7 +6,7 @@
 
 // Tools (mixins e functions globais)
 // =============================================================================
-
+@import "_mixins.scss";
 
 
 // Libs
@@ -24,7 +24,7 @@
 // Components
 // =============================================================================
 @import "_grid.scss";
-@import "_geral";
+@import "_geral.scss";
 
 
 // Includes
