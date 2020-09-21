@@ -2,7 +2,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const rename = require('gulp-rename')
+const rename = require('gulp-rename');
 const sass = require('gulp-sass'); 
 sass.compiler = require("node-sass"); //necessario para funcionar gulp-sass
 const cssnano = require('gulp-cssnano');
@@ -23,6 +23,6 @@ function compilaSass(){
 }
 
 function watch(){
-    gulp.watch("src/scss/**/*.scss", compilaSass)
+    gulp.watch("src/scss/**/*.scss", compilaSass);
 }
 
